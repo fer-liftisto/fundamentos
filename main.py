@@ -1,5 +1,5 @@
 
-def mi_capitalize() -> str:
+def mi_capitalize(cadena1: str) -> str:
     '''
     ###FEN###
     sintaxis:cadena.capitalize()
@@ -9,22 +9,22 @@ def mi_capitalize() -> str:
     ¿Que devuelve?: 1 de tipo -> str
     '''
     from  icecream import ic
+    ic.disable()
     ic()
-    CADENA1='cg5'
-    CADENA2 = CADENA1.capitalize()
-    print('cadena: ', CADENA1, ' cadena2: ', CADENA2)
-    print(f'CADENA2 es del tipo : {type(CADENA2)}')
-    ic(CADENA1)
-    ic(CADENA2)
-    return CADENA2
-
-
-
-
+    
+    cadena2 = cadena1.capitalize()
+    
+    ic(cadena1)
+    ic(cadena2)
+    return cadena2
 
 def main():
-    mi_capitalize()
+    CADENA1 = 'cg5'
 
+    CADENA2 = mi_capitalize(cadena1=CADENA1)
+
+    print('cadena: ', CADENA1, ' cadena2: ', CADENA2)
+    print(f'cadena2 es del tipo : {type(CADENA2)}')
 
 if __name__ == "__main__":
     main()
