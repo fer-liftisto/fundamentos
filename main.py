@@ -2,11 +2,11 @@
 def mi_capitalize(cadena1: str) -> str:
     '''
     ###FEN###
-    sintaxis:cadena.capitalize()
-    parametros: No
-    ¿Que hace?: pone la primer letra en mayusculas
-    La  cadena es inmutable
-    ¿Que devuelve?: 1 de tipo -> str
+    Sintaxis:cadena.capitalize()
+    Parametros: No
+    ¿Que hace?: Pone la primer letra de una cadena en mayusculas
+    La  cadena es inmutable.
+    ¿Que devuelve?: Una variable del tipo -> str
     '''
     from  icecream import ic
     ic.disable()
